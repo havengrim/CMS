@@ -7,11 +7,25 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    MazAnimatedElement: typeof import('maz-ui/components/MazAnimatedElement')['default']
+    MazAvatar: typeof import('maz-ui/components/MazAvatar')['default']
     MazBtn: typeof import('maz-ui/components/MazBtn')['default']
     MazButton: typeof import('maz-ui/components/MazButton')['default']
+    MazCard: typeof import('maz-ui/components/MazCard')['default']
     MazCheckbox: typeof import('maz-ui/components/MazCheckbox')['default']
+    MazChip: typeof import('maz-ui/components/MazChip')['default']
+    MazCircularProgress: typeof import('maz-ui/components/MazCircularProgress')['default']
+    MazDropdown: typeof import('maz-ui/components/MazDropdown')['default']
     MazInput: typeof import('maz-ui/components/MazInput')['default']
+    MazSelect: typeof import('maz-ui/components/MazSelect')['default']
+    MazTable: typeof import('maz-ui/components/MazTable')['default']
+    MazTooltip: typeof import('maz-ui/components/MazTooltip')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Sidebar: typeof import('./src/components/Sidebar.vue')['default']
+  }
+  export interface ComponentCustomProperties {
+    vTooltip: typeof import('maz-ui')['vTooltip']
   }
 }

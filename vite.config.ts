@@ -5,6 +5,9 @@ import { UnpluginVueComponentsResolver, UnpluginDirectivesResolver, UnpluginModu
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
+  server: {
+    port: 5174, // Change this to any available port
+  },
   plugins: [
     tailwindcss(),
     vue(),
