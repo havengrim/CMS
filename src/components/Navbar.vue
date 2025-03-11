@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-100 text-gray-900 py-4 px-6 flex justify-between items-center">
+  <nav class="bg-[var(--maz-bg)] text-gray-900 py-4 px-6 flex justify-between items-center">
     <!-- Toggle Sidebar Button -->
     <Bars3BottomLeftIcon class="w-6 h-6 cursor-pointer" @click="toggleSidebar" />
 

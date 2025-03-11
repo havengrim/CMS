@@ -1,4 +1,5 @@
 <template>
+  
     <div class="bg-white dark:bg-gray-900 min-h-screen flex justify-center">
       <!-- <div class="hidden lg:block lg:w-2/3 bg-cover" :style="backgroundStyle">
         <div class="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
@@ -12,11 +13,14 @@
         </div>
       </div> -->
   
-      <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6 " >
-        <div class="flex-1">
+      <div class="flex items-center w-full max-w-md mx-auto lg:w-2/6">
+
+      <MazCardSpotlight>
+        <div class="flex-1 p-6">
           <div class="text-center">
-            <div class="flex justify-center mx-auto">
-              <img class="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="Meraki UI Logo" />
+            <div class="flex justify-center items-center mx-auto flex-col">
+              <img class="w-14 h-7 sm:h-12" :src="images.logo" alt="Meraki UI Logo" />
+              <span class="font-bold text-xl mt-4">Contract Management System</span>
             </div>
             <p class="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
           </div>
@@ -46,13 +50,13 @@
             </p> -->
           </div>
         </div>
+      </MazCardSpotlight>
       </div>
     </div>
   </template>
   
-  <script>
-  
-  
+  <script setup>
+  import images from '../assets/images'; // Make sure this path is correct
   </script>
   
   <style scoped>
