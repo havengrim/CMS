@@ -8,7 +8,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     MazBtn: typeof import('maz-ui/components/MazBtn')['default']
+    MazButton: typeof import('maz-ui/components/MazButton')['default']
     MazCheckbox: typeof import('maz-ui/components/MazCheckbox')['default']
     MazInput: typeof import('maz-ui/components/MazInput')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

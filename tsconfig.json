@@ -13,9 +13,11 @@
     "auto-imports.d.ts",
   ],
   "compilerOptions": {
+    
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": []
   }
 }
