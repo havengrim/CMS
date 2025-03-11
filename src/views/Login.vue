@@ -12,7 +12,7 @@
         </div>
       </div> -->
   
-      <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+      <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6 " >
         <div class="flex-1">
           <div class="text-center">
             <div class="flex justify-center mx-auto">
@@ -41,9 +41,9 @@
               </div>
             </form>
   
-            <p class="mt-6 text-sm text-center text-gray-400">
+            <!-- <p class="mt-6 text-sm text-center text-gray-400">
               Don't have an account yet? <a href="#" class="text-blue-500 hover:underline">Sign up</a>.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
