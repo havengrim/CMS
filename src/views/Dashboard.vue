@@ -23,7 +23,7 @@
       </div>
     </MazCard>
   </div>
-  <div class="bg-white p-4 rounded-md">
+  <div class="bg-white p-4 rounded-md mt-4">
 
     <MazTable
       size="sm"

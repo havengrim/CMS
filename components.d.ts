@@ -15,6 +15,7 @@ declare module 'vue' {
     MazCircularProgressBar: typeof import('maz-ui/components/MazCircularProgressBar')['default']
     MazDropdown: typeof import('maz-ui/components/MazDropdown')['default']
     MazInput: typeof import('maz-ui/components/MazInput')['default']
+    MazSwitch: typeof import('maz-ui/components/MazSwitch')['default']
     MazTable: typeof import('maz-ui/components/MazTable')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
