@@ -1,11 +1,12 @@
 <template>
   <aside
+    v-show="!isMobile"
     :class="collapsed ? 'w-16' : 'w-56'"
-    class="bg-[var(--maz-bg)] text-gray-900 h-screen p-5 shadow flex flex-col justify-between transition-all duration-300"
+    class="bg-[var(--maz-bg)] text-gray-900 h-screen p-5 shadow flex flex-col justify-between transition-all duration-300  "
   >
     <div>
       <div class="flex justify-center items-center mb-5 gap-2">
-        <img :src="images.logo" alt="Logo CMS" class="w-6 h-6" />
+        <img :src="images.logo" alt="Logo CMS" class="w-7 h-6" />
         <span v-if="!collapsed" class="text-lg font-semibold transition-opacity duration-500">CMS</span>
       </div>
 
@@ -62,8 +63,27 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted, inject } from 'vue';
+
+const isMobile = ref(window.innerWidth < 768);
+
+
+// Function to update `isMobile` on window resize
+const updateMobileView = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
+// Listen for window resize
+onMounted(() => {
+  window.addEventListener('resize', updateMobileView);
+});
+
+// Cleanup event listener when component unmounts
+onUnmounted(() => {
+  window.removeEventListener('resize', updateMobileView);
+});
+
 import images from "../assets/images"
-import { inject } from 'vue';
 import { useRouter } from 'vue-router';
 import {
   Squares2X2Icon,

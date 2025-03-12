@@ -8,11 +8,14 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     MazAvatar: typeof import('maz-ui/components/MazAvatar')['default']
+    MazBadge: typeof import('maz-ui/components/MazBadge')['default']
     MazBtn: typeof import('maz-ui/components/MazBtn')['default']
     MazCard: typeof import('maz-ui/components/MazCard')['default']
     MazCardSpotlight: typeof import('maz-ui/components/MazCardSpotlight')['default']
+    MazCircularProgressBar: typeof import('maz-ui/components/MazCircularProgressBar')['default']
+    MazDropdown: typeof import('maz-ui/components/MazDropdown')['default']
     MazInput: typeof import('maz-ui/components/MazInput')['default']
-    MazSpotlightCard: typeof import('maz-ui/components/MazSpotlightCard')['default']
+    MazTable: typeof import('maz-ui/components/MazTable')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
